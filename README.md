@@ -3,6 +3,7 @@
 REACT MEMO vs USECALLBACK vs USEMEMO
 
 1. Memo hook
+   React.memo is used to wrap React Function components to prevent re-renderings.
    aviod child component to rerender, optimize the performance
 
 ```
@@ -11,7 +12,8 @@ export default memo(Child);
 ```
 
 2. Usecallback
-   Let child component to rerender efficiently,input object will not break memo effect.
+   The useCallback is used to memoize functions.
+   Let child component to rerender efficiently, input object will not break memo effect.
 
 ```
 import React, { useState,useCallback} from "react";
@@ -22,7 +24,8 @@ function changeChildNumber(number) {setChildNumber(number);}
 ```
 
 3. Usememo
-   avoid part of the function rerender in the same page, optimize the performance. For example, the Math.max(...arr) will only calculate once if the the arr didn't change.
+   The useMemo is used to memoize values,
+   For example, the Math.max(...arr) will only calculate once if the the arr didn't change.
 
 ```
 import React, { useMemo } from "react";
