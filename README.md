@@ -1,2 +1,9 @@
 # REACT_MEMO
 REACT MEMO vs USECALLBACK vs USEMEMO
+
+1. 
+
+2.
+
+3.
+
