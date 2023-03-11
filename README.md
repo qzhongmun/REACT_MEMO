@@ -7,3 +7,5 @@ REACT MEMO vs USECALLBACK vs USEMEMO
 
 3.
 
+4.
+
